@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Men's Shoes - Elegance Fashion</title>
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #f8e8ee, #fff7fa, #ead0da);
+            color: #4a2635;
+        }
+
+        /* NAVIGATION */
+
+        nav {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+
+            background: white;
+            padding: 18px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 25px;
+
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.12);
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #8b4a62;
+            font-weight: bold;
+            font-size: 15px;
+        }
+
+        nav a:hover {
+            color: #c06b88;
+        }
+
+        /* HEADER */
+
+        header {
+            background: #8b4a62;
+            color: white;
+            text-align: center;
+            padding: 45px 20px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 38px;
+        }
+
+        header p {
+            font-size: 17px;
+            margin-top: 10px;
+        }
+
+        /* PRODUCTS */
+
+        .products {
+            width: 90%;
+            max-width: 1200px;
+            margin: 40px auto;
+
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+
+        .product {
+            background: white;
+            border-radius: 15px;
+            padding: 20px;
+
+            text-align: center;
+
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
+
+            transition: transform 0.3s;
+        }
+
+        .product:hover {
+            transform: translateY(-5px);
+        }
+
+        .product img {
+            width: 100%;
+            height: 250px;
+            object-fit: contain;
+
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        .product h2 {
+            font-size: 20px;
+            margin: 15px 0 8px;
+        }
+
+        .price {
+            color: #8b4a62;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .sizes {
+            margin: 12px 0;
+            color: #666;
+        }
+
+        .buy-button {
+            background: #8b4a62;
+            color: white;
+
+            border: none;
+            border-radius: 8px;
+
+            padding: 10px 20px;
+
+            font-size: 15px;
+            font-weight: bold;
+
+            cursor: pointer;
+        }
+
+        .buy-button:hover {
+            background: #c06b88;
+        }
+
+        /* CONTACT */
+
+        #contact {
+            background: white;
+            text-align: center;
+            padding: 35px 20px;
+            margin-top: 40px;
+        }
+
+        #contact h2 {
+            color: #8b4a62;
+        }
+
+        /* FOOTER */
+
+        footer {
+            background: #8b4a62;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* RESPONSIVE */
+
+        @media (max-width: 900px) {
+
+            .products {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            nav {
+                flex-wrap: wrap;
+                gap: 15px;
+            }
+        }
+
+        @media (max-width: 600px) {
+
+            .products {
+                grid-template-columns: 1fr;
+            }
+
+            header h1 {
+                font-size: 30px;
+            }
+        }
+
+    </style>
+</head>
+
+
+<body>
+
+    <!-- NAVIGATION -->
+
+    <nav>
+
+        <a href="ingles.html">Home</a>
+
+        <a href="ropademujer.html">
+            Women's Clothing
+        </a>
+
+        <a href="ropadehombre.html">
+            Men's Clothing
+        </a>
+
+        <a href="ropainfantil.html">
+            Children's Clothing
+        </a>
+
+        <a href="calzadodemujer.html">
+            Women's Shoes
+        </a>
+
+        <a href="calzadodehombre.html">
+            Men's Shoes
+        </a>
+
+        <a href="nino.html">
+            Children's Shoes
+        </a>
+
+        <a href="#contact">
+            Contact
+        </a>
+
+    </nav>
+
+
+    <!-- HEADER -->
+
+    <header>
+
+        <h1>Men's Shoes</h1>
+
+        <p>
+            Discover our collection of men's shoes.
+        </p>
+
+    </header>
+
+
+    <!-- PRODUCTS -->
+
+    <section class="products">
+
+
+        <!-- PRODUCT 1 -->
+
+        <div class="product">
+
+            <img
+                src="zapato de hombre.jpeg"
+                alt="Men's Shoes">
+
+            <h2>
+                Men's Shoes
+            </h2>
+
+            <p class="price">
+                $30.00
+            </p>
+
+            <p class="sizes">
+                Sizes: 39 - 40 - 41 - 42 - 43
+            </p>
+
+            <button class="buy-button">
+                Buy Now
+            </button>
+
+        </div>
+
+
+        <!-- PRODUCT 2 -->
+
+        <div class="product">
+
+            <img
+                src="zapato blanco de hombre.jpeg"
+                alt="White Men's Shoes">
+
+            <h2>
+                White Men's Shoes
+            </h2>
+
+            <p class="price">
+                $35.00
+            </p>
+
+            <p class="sizes">
+                Sizes: 39 - 40 - 41 - 42 - 43
+            </p>
+
+            <button class="buy-button">
+                Buy Now
+            </button>
+
+        </div>
+
+
+        <!-- PRODUCT 3 -->
+
+        <div class="product">
+
+            <img
+                src="tenis rojo.jpeg"
+                alt="Red Men's Sneakers">
+
+            <h2>
+                Red Men's Sneakers
+            </h2>
+
+            <p class="price">
+                $32.00
+            </p>
+
+            <p class="sizes">
+                Sizes: 39 - 40 - 41 - 42 - 43
+            </p>
+
+            <button class="buy-button">
+                Buy Now
+            </button>
+
+        </div>
+
+
+    </section>
+
+
+    <!-- CONTACT -->
+
+    <section id="contact">
+
+        <h2>Contact Us</h2>
+
+        <p>
+            For more information, please contact Elegance Fashion.
+        </p>
+
+        <p>
+            Email: elegancefashion@example.com
+        </p>
+
+    </section>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <p>
+            © 2026 Elegance Fashion. All rights reserved.
+        </p>
+
+    </footer>
+
+
+</body>
+
+</html>

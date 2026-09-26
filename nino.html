@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Children's Shoes - Elegance Fashion</title>
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(#f8e8ee, #fff7fa, #ead0da);
+        }
+
+        nav {
+            background: white;
+            padding: 18px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav a {
+            color: #8b4a62;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 8px 12px;
+        }
+
+        header {
+            background: #8b4a62;
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        header h1 {
+            font-size: 42px;
+        }
+
+        section {
+            padding: 40px;
+        }
+
+        section h2 {
+            text-align: center;
+            color: #8b4a62;
+            font-size: 32px;
+            margin-bottom: 30px;
+        }
+
+        .products {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 25px;
+            max-width: 1250px;
+            margin: auto;
+        }
+
+        .product {
+            background: white;
+            padding: 15px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,.15);
+        }
+
+        .product img {
+            width: 100%;
+            height: 230px;
+            object-fit: contain;
+            cursor: pointer;
+            border-radius: 10px;
+        }
+
+        .product h3 {
+            color: #8b4a62;
+        }
+
+        .price {
+            color: #8b4a62;
+            font-weight: bold;
+            font-size: 19px;
+        }
+
+        .sizes {
+            font-weight: bold;
+        }
+
+        #zoom {
+            display: none;
+            position: fixed;
+            inset: 0;
+            background: rgba(0,0,0,.88);
+            text-align: center;
+            z-index: 1000;
+        }
+
+        #zoom img {
+            width: 600px;
+            max-width: 85%;
+            max-height: 65%;
+            object-fit: contain;
+            margin-top: 45px;
+            background: white;
+            border-radius: 15px;
+        }
+
+        #zoom h2,
+        #zoom p {
+            color: white;
+        }
+
+        #close {
+            position: absolute;
+            top: 10px;
+            right: 30px;
+            color: white;
+            font-size: 45px;
+            cursor: pointer;
+        }
+
+        footer {
+            background: #8b4a62;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        @media (max-width: 900px) {
+            .products {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 600px) {
+            .products {
+                grid-template-columns: 1fr;
+            }
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<nav>
+
+    <a href="ingles.html">Home</a>
+    <a href="ropadehombre.html">Men's Clothing</a>
+    <a href="ropademujer.html">Women's Clothing</a>
+    <a href="ropainfantil.html">Children's Clothing</a>
+    <a href="calzadodehombre.html">Men's Shoes</a>
+    <a href="calzadodemujer.html">Women's Shoes</a>
+    <a href="nino.html">Children's Shoes</a>
+</nav>
+
+
+<header>
+
+    <h1>Children's Shoes</h1>
+
+    <p>
+        Comfortable and fashionable shoes for children
+    </p>
+
+</header>
+
+
+<!-- GIRLS' SHOES -->
+
+<section>
+
+    <h2>Girls' Shoes</h2>
+
+    <div class="products">
+
+
+        <div class="product">
+            <img src="bota de niña.jpeg"
+                 onclick="openImage(this,'Girls Boots','$28.00')">
+
+            <h3>Girls Boots</h3>
+            <p class="price">$28.00</p>
+            <p class="sizes">Sizes: 28, 29, 30, 31, 32, 33</p>
+        </div>
+
+
+        <div class="product">
+            <img src="bota para niña.jpeg"
+                 onclick="openImage(this,'Girls Boots','$28.00')">
+
+            <h3>Girls Boots</h3>
+            <p class="price">$28.00</p>
+            <p class="sizes">Sizes: 28, 29, 30, 31, 32, 33</p>
+        </div>
+
+
+        <div class="product">
+            <img src="tenis para niña.jpeg"
+                 onclick="openImage(this,'Girls Sneakers','$25.00')">
+
+            <h3>Girls Sneakers</h3>
+            <p class="price">$25.00</p>
+            <p class="sizes">Sizes: 28, 29, 30, 31, 32, 33</p>
+        </div>
+
+
+        <div class="product">
+            <img src="zapato casual de niña.jpeg"
+                 onclick="openImage(this,'Girls Casual Shoes','$25.00')">
+
+            <h3>Girls Casual Shoes</h3>
+            <p class="price">$25.00</p>
+            <p class="sizes">Sizes: 28, 29, 30, 31, 32, 33</p>
+        </div>
+
+
+        <div class="product">
+            <img src="zapato de niña.jpeg"
+                 onclick="openImage(this,'Girls Shoes','$25.00')">
+
+            <h3>Girls Shoes</h3>
+            <p class="price">$25.00</p>
+            <p class="sizes">Sizes: 28, 29, 30, 31, 32, 33</p>
+        </div>
+
+
+    </div>
+
+</section>
+
+
+<!-- BOYS' SHOES -->
+
+<section>
+
+    <h2>Boys' Shoes</h2>
+
+    <div class="products">
+
+
+        <div class="product">
+            <img src="air force one de niño.jpeg"
+                 onclick="openImage(this,'Air Force One for Boys','$35.00')">
+
+            <h3>Air Force One for Boys</h3>
+            <p class="price">$35.00</p>
+            <p class="sizes">Sizes: 28, 29, 30, 31, 32, 33</p>
+        </div>
+
+
+        <div class="product">
+            <img src="air jordan de niño.jpeg"
+                 onclick="openImage(this,'Air Jordan for Boys','$35.00')">
+
+            <h3>Air Jordan for Boys</h3>
+            <p class="price">$35.00</p>
+            <p class="sizes">Sizes: 28, 29, 30, 31, 32, 33</p>
+        </div>
+
+
+        <div class="product">
+            <img src="converse de niño.jpeg"
+                 onclick="openImage(this,'Converse for Boys','$30.00')">
+
+            <h3>Converse for Boys</h3>
+            <p class="price">$30.00</p>
+            <p class="sizes">Sizes: 28, 29, 30, 31, 32, 33</p>
+        </div>
+
+
+        <div class="product">
+            <img src="nike de niño.jpeg"
+                 onclick="openImage(this,'Nike for Boys','$35.00')">
+
+            <h3>Nike for Boys</h3>
+            <p class="price">$35.00</p>
+            <p class="sizes">Sizes: 28, 29, 30, 31, 32, 33</p>
+        </div>
+
+
+        <div class="product">
+            <img src="nike para niño.jpeg"
+                 onclick="openImage(this,'Nike Shoes for Boys','$35.00')">
+
+            <h3>Nike Shoes for Boys</h3>
+            <p class="price">$35.00</p>
+            <p class="sizes">Sizes: 28, 29, 30, 31, 32, 33</p>
+        </div>
+
+
+        <div class="product">
+            <img src="tenis Jordan de niño.jpeg"
+                 onclick="openImage(this,'Jordan Sneakers for Boys','$35.00')">
+
+            <h3>Jordan Sneakers for Boys</h3>
+            <p class="price">$35.00</p>
+            <p class="sizes">Sizes: 28, 29, 30, 31, 32, 33</p>
+        </div>
+
+
+        <div class="product">
+            <img src="tenis para niño.jpeg"
+                 onclick="openImage(this,'Sneakers for Boys','$25.00')">
+
+            <h3>Sneakers for Boys</h3>
+            <p class="price">$25.00</p>
+            <p class="sizes">Sizes: 28, 29, 30, 31, 32, 33</p>
+        </div>
+
+
+        <div class="product">
+            <img src="vans de niño.jpeg"
+                 onclick="openImage(this,'Vans for Boys','$30.00')">
+
+            <h3>Vans for Boys</h3>
+            <p class="price">$30.00</p>
+            <p class="sizes">Sizes: 28, 29, 30, 31, 32, 33</p>
+        </div>
+
+
+        <div class="product">
+            <img src="vans para niño.jpeg"
+                 onclick="openImage(this,'Vans Shoes for Boys','$30.00')">
+
+            <h3>Vans Shoes for Boys</h3>
+            <p class="price">$30.00</p>
+            <p class="sizes">Sizes: 28, 29, 30, 31, 32, 33</p>
+        </div>
+
+
+        <div class="product">
+            <img src="zapato blanco para niño.jpeg"
+                 onclick="openImage(this,'White Shoes for Boys','$25.00')">
+
+            <h3>White Shoes for Boys</h3>
+            <p class="price">$25.00</p>
+            <p class="sizes">Sizes: 28, 29, 30, 31, 32, 33</p>
+        </div>
+
+
+        <div class="product">
+            <img src="zapato celeste con negro de niño.jpeg"
+                 onclick="openImage(this,'Blue and Black Shoes for Boys','$28.00')">
+
+            <h3>Blue and Black Shoes for Boys</h3>
+            <p class="price">$28.00</p>
+            <p class="sizes">Sizes: 28, 29, 30, 31, 32, 33</p>
+        </div>
+
+
+        <div class="product">
+            <img src="zapato de niño.jpeg"
+                 onclick="openImage(this,'Boys Shoes','$25.00')">
+
+            <h3>Boys Shoes</h3>
+            <p class="price">$25.00</p>
+            <p class="sizes">Sizes: 28, 29, 30, 31, 32, 33</p>
+        </div>
+
+
+        <div class="product">
+            <img src="zapato para niño.jpeg"
+                 onclick="openImage(this,'Shoes for Boys','$25.00')">
+
+            <h3>Shoes for Boys</h3>
+            <p class="price">$25.00</p>
+            <p class="sizes">Sizes: 28, 29, 30, 31, 32, 33</p>
+        </div>
+
+
+        <div class="product">
+            <img src="zapato rojo de niño.jpeg"
+                 onclick="openImage(this,'Red Shoes for Boys','$28.00')">
+
+            <h3>Red Shoes for Boys</h3>
+            <p class="price">$28.00</p>
+            <p class="sizes">Sizes: 28, 29, 30, 31, 32, 33</p>
+        </div>
+
+
+    </div>
+
+</section>
+
+
+<!-- BABY SHOES -->
+
+<section>
+
+    <h2>Baby Shoes</h2>
+
+    <div class="products">
+
+
+        <div class="product">
+            <img src="sansdalia para bebe.jpeg"
+                 onclick="openImage(this,'Baby Sandals','$18.00')">
+
+            <h3>Baby Sandals</h3>
+            <p class="price">$18.00</p>
+            <p class="sizes">Sizes: 18, 19, 20, 21, 22</p>
+        </div>
+
+
+    </div>
+
+</section>
+
+
+<div id="zoom">
+
+    <span id="close" onclick="closeImage()">×</span>
+
+    <img id="bigImage">
+
+    <h2 id="bigName"></h2>
+
+    <p id="bigPrice"></p>
+
+</div>
+
+
+<footer>
+
+    <p>© 2026 Elegance Fashion</p>
+
+</footer>
+
+
+<script>
+
+function openImage(image, name, price) {
+
+    document.getElementById("zoom").style.display = "block";
+
+    document.getElementById("bigImage").src = image.src;
+
+    document.getElementById("bigName").innerHTML = name;
+
+    document.getElementById("bigPrice").innerHTML = price;
+
+}
+
+function closeImage() {
+
+    document.getElementById("zoom").style.display = "none";
+
+}
+
+</script>
+
+</body>
+</html>

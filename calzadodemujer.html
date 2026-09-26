@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Women's Shoes - Elegance Fashion</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(#f8e8ee, #fff7fa, #ead0da);
+        }
+
+        nav {
+            background: white;
+            padding: 18px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        nav a {
+            color: #8b4a62;
+            text-decoration: none;
+            margin: 10px;
+            font-weight: bold;
+        }
+
+        header {
+            background: #8b4a62;
+            color: white;
+            text-align: center;
+            padding: 40px;
+        }
+
+        section {
+            padding: 35px;
+            text-align: center;
+        }
+
+        section h2 {
+            color: #8b4a62;
+            font-size: 30px;
+        }
+
+        .products {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 25px;
+        }
+
+        .product {
+            background: white;
+            padding: 15px;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+
+        .product img {
+            width: 100%;
+            height: 240px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .product h3 {
+            color: #8b4a62;
+        }
+
+        .price {
+            font-size: 19px;
+            font-weight: bold;
+        }
+
+        .buy {
+            background: #8b4a62;
+            color: white;
+            border: none;
+            padding: 10px 22px;
+            border-radius: 8px;
+        }
+
+        footer {
+            background: #8b4a62;
+            color: white;
+            text-align: center;
+            padding: 25px;
+            margin-top: 30px;
+        }
+
+        @media (max-width: 1100px) {
+            .products {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 600px) {
+            .products {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<nav>
+    <a href="ingles.html">Home</a>
+    <a href="ropademujer.html">Women's Clothing</a>
+    <a href="ropadehombre.html">Men's Clothing</a>
+    <a href="ropainfantil.html">Children's Clothing</a>
+    <a href="calzadodemujer.html">Women's Shoes</a>
+    <a href="calzadodehombre.html">Men's Shoes</a>
+    <a href="calzadoinfantil.html">Children's Shoes</a>
+</nav>
+
+<header>
+    <h1>Women's Shoes</h1>
+    <p>Elegant and Modern Footwear</p>
+</header>
+
+<section>
+
+    <h2>Women's Shoe Collection</h2>
+
+    <div class="products">
+
+        <div class="product">
+            <img src="tacon bajo.jpeg" alt="Low Heels">
+            <h3>Low Heels</h3>
+            <p class="price">$35.00</p>
+            <p>Sizes: 36, 37, 38, 39, 40</p>
+            <button class="buy">Buy</button>
+        </div>
+
+        <div class="product">
+            <img src="tacon negro elegante.jpeg" alt="Elegant Black Heels">
+            <h3>Elegant Black Heels</h3>
+            <p class="price">$45.00</p>
+            <p>Sizes: 36, 37, 38, 39, 40</p>
+            <button class="buy">Buy</button>
+        </div>
+
+        <div class="product">
+            <img src="tenis nike.jpeg" alt="Nike Sneakers">
+            <h3>Nike Sneakers</h3>
+            <p class="price">$45.00</p>
+            <p>Sizes: 36, 37, 38, 39, 40</p>
+            <button class="buy">Buy</button>
+        </div>
+
+       <div class="product">
+            <img src="zandalias de mujer.jpeg"
+                 onclick="openImage(this,'Women Sandals','$25.00')">
+
+            <h3>Women Sandals</h3>
+            <p class="price">$25.00</p>
+            <p class="sizes">Sizes: 36, 37, 38, 39, 40</p>
+        </div>
+
+
+
+        <div class="product">
+            <img src="zandalias comodas.jpeg" alt="Comfortable Sandals">
+            <h3>Comfortable Sandals</h3>
+            <p class="price">$22.00</p>
+            <p>Sizes: 36, 37, 38, 39, 40</p>
+            <button class="buy">Buy</button>
+        </div>
+
+        <div class="product">
+            <img src="zandalias de mujer.jpeg" alt="Women's Sandals">
+            <h3>Women's Sandals</h3>
+            <p class="price">$25.00</p>
+            <p>Sizes: 36, 37, 38, 39, 40</p>
+            <button class="buy">Buy</button>
+        </div>
+
+        <div class="product">
+            <img src="zandalias tipo playeras.jpeg" alt="Beach Sandals">
+            <h3>Beach Sandals</h3>
+            <p class="price">$20.00</p>
+            <p>Sizes: 36, 37, 38, 39, 40</p>
+            <button class="buy">Buy</button>
+        </div>
+
+                <div class="product">
+            <img src="zapatos casual.jpeg"
+                 onclick="openImage(this,'Casual Shoes','$30.00')">
+
+            <h3>Casual Shoes</h3>
+            <p class="price">$30.00</p>
+            <p class="sizes">Sizes: 36, 37, 38, 39, 40</p>
+        </div>
+
+
+        <div class="product">
+            <img src="zapatos cerrados.jpeg"
+                 onclick="openImage(this,'Closed Shoes','$32.00')">
+
+            <h3>Closed Shoes</h3>
+            <p class="price">$32.00</p>
+            <p class="sizes">Sizes: 36, 37, 38, 39, 40</p>
+        </div>
+  <div class="product">
+            <img src="zandalias.jpeg"
+                 onclick="openImage(this,'Sandals','$22.00')">
+
+            <h3>Sandals</h3>
+            <p class="price">$22.00</p>
+            <p class="sizes">Sizes: 36, 37, 38, 39, 40</p>
+        </div>
+
+
+    </div>
+</section>
+
+<footer>
+    © 2026 Elegance Fashion
+</footer>
+
+</body>
+</html>

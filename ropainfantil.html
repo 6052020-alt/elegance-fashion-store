@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Children's Clothing - Elegance Fashion</title>
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(#f8e8ee, #fff7fa, #ead0da);
+            color: #333;
+        }
+
+        nav {
+            background: white;
+            padding: 18px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+        }
+
+        nav a {
+            color: #8b4a62;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 8px 12px;
+        }
+
+        header {
+            background: #8b4a62;
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        header h1 {
+            font-size: 42px;
+        }
+
+        section {
+            padding: 40px;
+        }
+
+        section h2 {
+            text-align: center;
+            color: #8b4a62;
+            font-size: 32px;
+            margin-bottom: 30px;
+        }
+
+        .products {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 25px;
+            max-width: 1250px;
+            margin: auto;
+        }
+
+        .product {
+            background: white;
+            padding: 15px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+            transition: 0.3s;
+        }
+
+        .product:hover {
+            transform: translateY(-5px);
+        }
+
+        .product img {
+            width: 100%;
+            height: 230px;
+            object-fit: cover;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        .product h3 {
+            color: #8b4a62;
+            font-size: 18px;
+        }
+
+        .price {
+            color: #8b4a62;
+            font-size: 19px;
+            font-weight: bold;
+        }
+
+        .sizes {
+            font-weight: bold;
+        }
+
+        #zoom {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.88);
+            text-align: center;
+            z-index: 1000;
+            overflow: auto;
+        }
+
+        #zoom img {
+            width: 600px;
+            max-width: 85%;
+            max-height: 65%;
+            object-fit: contain;
+            margin-top: 40px;
+            border-radius: 15px;
+            background: white;
+        }
+
+        #zoom h2 {
+            color: white;
+            font-size: 28px;
+        }
+
+        #zoom p {
+            color: white;
+            font-size: 20px;
+        }
+
+        #close {
+            position: absolute;
+            top: 10px;
+            right: 30px;
+            color: white;
+            font-size: 45px;
+            cursor: pointer;
+        }
+
+        footer {
+            background: #8b4a62;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        @media (max-width: 1000px) {
+            .products {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 600px) {
+            .products {
+                grid-template-columns: 1fr;
+            }
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<nav>
+
+    <a href="ingles.html">Home</a>
+    <a href="ropadehombre.html">Men's Clothing</a>
+    <a href="ropademujer.html">Women's Clothing</a>
+    <a href="calzadodehombre.html">Men's Shoes</a>
+    <a href="calzadodemujer.html">Women's Shoes</a>
+    <a href="calzadoinfantil.html">Children's Shoes</a>
+
+</nav>
+
+
+<header>
+
+    <h1>Children's Clothing</h1>
+
+    <p>
+        Clothing for girls, boys and babies
+    </p>
+
+</header>
+
+
+<!-- GIRLS -->
+
+<section>
+
+    <h2>Girls' Clothing</h2>
+
+    <div class="products">
+
+
+        <div class="product">
+            <img src="conjunto de falda y camisa de bb.jpeg"
+                 onclick="openImage(this,'Baby Girl Skirt and Shirt Set','$25.00')">
+
+            <h3>Baby Girl Skirt and Shirt Set</h3>
+            <p class="price">$25.00</p>
+            <p class="sizes">Sizes: 0-3M, 3-6M, 6-12M</p>
+        </div>
+
+
+        <div class="product">
+            <img src="conjunto de fresitas.jpeg"
+                 onclick="openImage(this,'Strawberry Set','$25.00')">
+
+            <h3>Strawberry Set</h3>
+            <p class="price">$25.00</p>
+            <p class="sizes">Sizes: 2, 4, 6, 8, 10, 12</p>
+        </div>
+
+
+        <div class="product">
+            <img src="chort de bb.jpeg"
+                 onclick="openImage(this,'Baby Shorts','$15.00')">
+
+            <h3>Baby Shorts</h3>
+            <p class="price">$15.00</p>
+            <p class="sizes">Sizes: 0-3M, 3-6M, 6-12M</p>
+        </div>
+
+
+        <div class="product">
+            <img src="vestido oberol de bb.jpeg"
+                 onclick="openImage(this,'Baby Overall Dress','$22.00')">
+
+            <h3>Baby Overall Dress</h3>
+            <p class="price">$22.00</p>
+            <p class="sizes">Sizes: 0-3M, 3-6M, 6-12M</p>
+        </div>
+
+
+        <div class="product">
+            <img src="obrol de bb.jpeg"
+                 onclick="openImage(this,'Baby Overall','$22.00')">
+
+            <h3>Baby Overall</h3>
+            <p class="price">$22.00</p>
+            <p class="sizes">Sizes: 0-3M, 3-6M, 6-12M</p>
+        </div>
+
+
+        <div class="product">
+            <img src="conjunto de bb.jpeg"
+                 onclick="openImage(this,'Baby Set','$20.00')">
+
+            <h3>Baby Set</h3>
+            <p class="price">$20.00</p>
+            <p class="sizes">Sizes: 0-3M, 3-6M, 6-12M</p>
+        </div>
+
+
+        <div class="product">
+            <img src="conjunto de bb (2).jpeg"
+                 onclick="openImage(this,'Baby Set 2','$20.00')">
+
+            <h3>Baby Set 2</h3>
+            <p class="price">$20.00</p>
+            <p class="sizes">Sizes: 0-3M, 3-6M, 6-12M</p>
+        </div>
+
+
+    </div>
+
+</section>
+
+
+<!-- BOYS -->
+
+<section>
+
+    <h2>Boys' Clothing</h2>
+
+    <div class="products">
+
+
+        <div class="product">
+            <img src="conjunto de chort de niño.jpeg"
+                 onclick="openImage(this,'Boys Shorts Set','$22.00')">
+
+            <h3>Boys Shorts Set</h3>
+            <p class="price">$22.00</p>
+            <p class="sizes">Sizes: 2, 4, 6, 8, 10, 12</p>
+        </div>
+
+
+        <div class="product">
+            <img src="conjunto de chort de niño (2).jpeg"
+                 onclick="openImage(this,'Boys Shorts Set 2','$22.00')">
+
+            <h3>Boys Shorts Set 2</h3>
+            <p class="price">$22.00</p>
+            <p class="sizes">Sizes: 2, 4, 6, 8, 10, 12</p>
+        </div>
+
+
+        <div class="product">
+            <img src="conjunto de niño.jpeg"
+                 onclick="openImage(this,'Boys Set','$25.00')">
+
+            <h3>Boys Set</h3>
+            <p class="price">$25.00</p>
+            <p class="sizes">Sizes: 2, 4, 6, 8, 10, 12</p>
+        </div>
+
+
+        <div class="product">
+            <img src="conjunto de palazo de niño.jpeg"
+                 onclick="openImage(this,'Boys Palazo Set','$25.00')">
+
+            <h3>Boys Palazo Set</h3>
+            <p class="price">$25.00</p>
+            <p class="sizes">Sizes: 2, 4, 6, 8, 10, 12</p>
+        </div>
+
+
+        <div class="product">
+            <img src="conjunto de pans de niño.jpeg"
+                 onclick="openImage(this,'Boys Pants Set','$25.00')">
+
+            <h3>Boys Pants Set</h3>
+            <p class="price">$25.00</p>
+            <p class="sizes">Sizes: 2, 4, 6, 8, 10, 12</p>
+        </div>
+
+
+        <div class="product">
+            <img src="conjunto de pantalon roto de niño.jpeg"
+                 onclick="openImage(this,'Boys Ripped Pants Set','$28.00')">
+
+            <h3>Boys Ripped Pants Set</h3>
+            <p class="price">$28.00</p>
+            <p class="sizes">Sizes: 2, 4, 6, 8, 10, 12</p>
+        </div>
+
+
+        <div class="product">
+            <img src="conjunto de sueter de niño.jpeg"
+                 onclick="openImage(this,'Boys Sweater Set','$28.00')">
+
+            <h3>Boys Sweater Set</h3>
+            <p class="price">$28.00</p>
+            <p class="sizes">Sizes: 2, 4, 6, 8, 10, 12</p>
+        </div>
+
+
+        <div class="product">
+            <img src="conjunto de ropa olgada de joven.jpeg"
+                 onclick="openImage(this,'Loose Young Boys Set','$30.00')">
+
+            <h3>Loose Young Boys Set</h3>
+            <p class="price">$30.00</p>
+            <p class="sizes">Sizes: 8, 10, 12, 14</p>
+        </div>
+
+
+    </div>
+
+</section>
+
+
+<!-- BABY CLOTHING -->
+
+<section>
+
+    <h2>Baby Clothing</h2>
+
+    <div class="products">
+
+
+        <div class="product">
+            <img src="conjunto de lana de bb.jpeg"
+                 onclick="openImage(this,'Baby Wool Set','$22.00')">
+
+            <h3>Baby Wool Set</h3>
+            <p class="price">$22.00</p>
+            <p class="sizes">Sizes: 0-3M, 3-6M, 6-12M</p>
+        </div>
+
+
+        <div class="product">
+            <img src="pantalon ancho de bb.jpeg"
+                 onclick="openImage(this,'Baby Wide Pants','$18.00')">
+
+            <h3>Baby Wide Pants</h3>
+            <p class="price">$18.00</p>
+            <p class="sizes">Sizes: 0-3M, 3-6M, 6-12M</p>
+        </div>
+
+
+    </div>
+
+</section>
+
+
+<div id="zoom">
+
+    <span id="close" onclick="closeImage()">×</span>
+
+    <img id="bigImage">
+
+    <h2 id="bigName"></h2>
+
+    <p id="bigPrice"></p>
+
+</div>
+
+
+<footer>
+
+    <p>© 2026 Elegance Fashion</p>
+
+</footer>
+
+
+<script>
+
+function openImage(image, name, price) {
+
+    document.getElementById("zoom").style.display = "block";
+
+    document.getElementById("bigImage").src = image.src;
+
+    document.getElementById("bigName").innerHTML = name;
+
+    document.getElementById("bigPrice").innerHTML = price;
+
+}
+
+function closeImage() {
+
+    document.getElementById("zoom").style.display = "none";
+
+}
+
+</script>
+
+</body>
+</html>

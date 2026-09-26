@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Elegance Fashion</title>
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(#f8e8ee, #fff7fa, #ead0da);
+            color: #333;
+        }
+
+        /* Navigation menu */
+
+        nav {
+            background-color: white;
+            padding: 20px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+        }
+
+        nav a {
+            color: #8b4a62;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 10px 15px;
+            font-size: 17px;
+        }
+
+        nav a:hover {
+            color: #c06b88;
+        }
+
+        /* Header */
+
+        header {
+            background-color: #8b4a62;
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        header h1 {
+            font-size: 45px;
+            margin: 0 0 15px 0;
+        }
+
+        header p {
+            font-size: 20px;
+            margin: 0;
+        }
+
+        /* Welcome */
+
+        .welcome {
+            text-align: center;
+            padding: 45px 20px;
+        }
+
+        .welcome h2 {
+            color: #8b4a62;
+            font-size: 32px;
+        }
+
+        .welcome p {
+            font-size: 18px;
+            max-width: 800px;
+            margin: auto;
+            line-height: 1.7;
+        }
+
+        /* Categories */
+
+        .categories {
+            padding: 30px 50px 60px 50px;
+        }
+
+        .categories h2 {
+            text-align: center;
+            color: #8b4a62;
+            font-size: 32px;
+            margin-bottom: 35px;
+        }
+
+        .category-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        .category {
+            background-color: white;
+            padding: 30px;
+            text-align: center;
+            border-radius: 18px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+            transition: 0.3s;
+        }
+
+        .category:hover {
+            transform: translateY(-7px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+        }
+
+        .category h3 {
+            color: #8b4a62;
+            font-size: 23px;
+            margin-bottom: 15px;
+        }
+
+        .category p {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        .category-button {
+            display: inline-block;
+            background-color: #8b4a62;
+            color: white;
+            text-decoration: none;
+            padding: 12px 25px;
+            border-radius: 8px;
+            font-weight: bold;
+            margin-top: 15px;
+            transition: 0.3s;
+        }
+
+        .category-button:hover {
+            background-color: #c06b88;
+        }
+
+        /* Contact */
+
+        #contact {
+            background-color: white;
+            text-align: center;
+            padding: 45px 20px;
+            margin-top: 20px;
+        }
+
+        #contact h2 {
+            color: #8b4a62;
+            font-size: 30px;
+        }
+
+        .contact-information {
+            font-size: 18px;
+            line-height: 2;
+        }
+
+        .whatsapp {
+            color: #8b4a62;
+            font-weight: bold;
+        }
+
+        /* Footer */
+
+        footer {
+            background-color: #8b4a62;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        /* Responsive */
+
+        @media (max-width: 900px) {
+
+            .category-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+        }
+
+        @media (max-width: 600px) {
+
+            nav a {
+                display: inline-block;
+                margin: 7px;
+                font-size: 15px;
+            }
+
+            header h1 {
+                font-size: 32px;
+            }
+
+            .categories {
+                padding: 25px 15px;
+            }
+
+            .category-container {
+                grid-template-columns: 1fr;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Navigation menu -->
+
+    <nav>
+
+        <a href="ingles.html">Home</a>
+
+        <a href="ropademujer.html">
+            Women's Clothing
+        </a>
+        <a href="ropadehombre.html">
+            Men's Clothing
+        </a>
+        <a href="ropainfantil.html">
+            Children's Clothing
+        </a>
+        <a href="calzadodemujer.html">
+            Women's Shoes
+        </a>
+        <a href="calzadodehombre.html">
+            Men's Shoes
+        </a>
+        <a href="nino.html">
+            Children's Shoes
+        </a>
+        <a href="#contact">
+            Contact
+        </a>
+    </nav>
+    <!-- Main header -->
+    <header>
+        <h1>Elegance Fashion</h1>
+        <p>
+            Fashion, Style and Elegance in One Place
+        </p>
+    </header>
+    <!-- Welcome section -->
+    <section class="welcome">
+        <h2>Welcome to Elegance Fashion</h2>
+        <p>
+            Discover our collection of fashionable clothing
+            and shoes for women, men, girls and boys.
+            Choose a category below to explore our products,
+            prices and available sizes.
+        </p>
+    </section>
+    <!-- Categories -->
+    <section class="categories">
+        <h2>Our Categories</h2>
+        <div class="category-container">
+            <!-- Women's clothing -->
+            <div class="category">
+                <h3>Women's Clothing</h3>
+                <p>
+                    Discover our collection of clothing
+                    for women with different styles,
+                    sizes and prices.
+                </p>
+                <a
+                    class="category-button"
+                    href="ropademujer.html">
+                    View Women's Clothing
+                </a>
+            </div>
+            <!-- Men's clothing -->
+            <div class="category">
+                <h3>Men's Clothing</h3>
+                <p>
+                    Find shirts, pants, jackets,
+                    shorts and other clothing
+                    for men.
+                </p>
+                <a
+                    class="category-button"
+                    href="ropadehombre.html">
+                    View Men's Clothing
+                </a>
+            </div>
+            <!-- Children's clothing -->
+            <div class="category">
+                <h3>Children's Clothing</h3>
+                <p>
+                    Explore our children's clothing
+                    collection for girls and boys,
+                    with different sizes and prices.
+                </p>
+                <a
+                    class="category-button"
+                    href="ropainfantil.html">
+                    View Children's Clothing
+                </a>
+            </div>
+            <!-- Women's shoes -->
+            <div class="category">
+                <h3>Women's Shoes</h3>
+                <p>
+                    Discover shoes for women,
+                    including different styles,
+                    sizes and prices.
+                </p>
+                <a
+                    class="category-button"
+                    href="calzadodemujer.html">
+                    View Women's Shoes
+                </a>
+            </div>
+            <!-- Men's shoes -->
+            <div class="category">
+                <h3>Men's Shoes</h3>
+                <p>
+                    Find different styles of shoes
+                    for men with available sizes
+                    and prices.
+                </p>
+                <a
+                    class="category-button"
+                    href="calzadodehombre.html">
+                    View Men's Shoes
+                </a>
+            </div>
+            <!-- Children's shoes -->
+            <div class="category">
+                <h3>Children's Shoes</h3>
+                <p>
+                    Explore our children's footwear
+                    collection for girls and boys,
+                    with different sizes and prices.
+                </p>
+                <a
+                    class="category-button"
+                    href="nino.html">
+                    View Children's Shoes
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- Contact -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <div class="contact-information">
+            <p>
+                <strong>Email:</strong>
+                elegancefashion@store.com
+            </p>
+            <p>
+                <strong>Phone:</strong>
+                7503-7234
+            </p>
+            <p class="whatsapp">
+                <strong>WhatsApp:</strong>
+                +503 7503-7234
+            </p>
+            <p>
+                <strong>Address:</strong>
+                San Miguel, El Salvador
+            </p>
+            <p>
+                We will be happy to assist you.
+            </p>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer>
+        <p>
+            © 2026 Elegance Fashion. All rights reserved.
+        </p>
+    </footer>
+</body>
+</html>

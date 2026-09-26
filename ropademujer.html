@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Women's Clothing - Elegance Fashion</title>
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(#f8e8ee, #fff7fa, #ead0da);
+            color: #333;
+        }
+
+        nav {
+            background: white;
+            padding: 18px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+        }
+
+        nav a {
+            color: #8b4a62;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 8px 12px;
+        }
+
+        header {
+            background: #8b4a62;
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        header h1 {
+            font-size: 42px;
+        }
+
+        section {
+            padding: 40px;
+        }
+
+        section h2 {
+            text-align: center;
+            color: #8b4a62;
+            font-size: 32px;
+            margin-bottom: 30px;
+        }
+
+        .products {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 25px;
+            max-width: 1250px;
+            margin: auto;
+        }
+
+        .product {
+            background: white;
+            padding: 15px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+            transition: 0.3s;
+        }
+
+        .product:hover {
+            transform: translateY(-5px);
+        }
+
+        .product img {
+            width: 100%;
+            height: 230px;
+            object-fit: cover;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        .product h3 {
+            color: #8b4a62;
+            font-size: 19px;
+        }
+
+        .price {
+            color: #8b4a62;
+            font-size: 19px;
+            font-weight: bold;
+        }
+
+        .sizes {
+            font-weight: bold;
+        }
+
+        #zoom {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.88);
+            text-align: center;
+            z-index: 1000;
+            overflow: auto;
+        }
+
+        #zoom img {
+            width: 600px;
+            max-width: 85%;
+            max-height: 65%;
+            object-fit: contain;
+            margin-top: 40px;
+            border-radius: 15px;
+            background: white;
+        }
+
+        #zoom h2 {
+            color: white;
+            font-size: 28px;
+        }
+
+        #zoom p {
+            color: white;
+            font-size: 20px;
+        }
+
+        #close {
+            position: absolute;
+            top: 10px;
+            right: 30px;
+            color: white;
+            font-size: 45px;
+            cursor: pointer;
+        }
+
+        footer {
+            background: #8b4a62;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        @media (max-width: 1000px) {
+            .products {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 600px) {
+            .products {
+                grid-template-columns: 1fr;
+            }
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<nav>
+
+    <a href="ingles.html">Home</a>
+    <a href="ropadehombre.html">Men's Clothing</a>
+    <a href="ropainfantil.html">Children's Clothing</a>
+    <a href="calzadodemujer.html">Women's Shoes</a>
+    <a href="calzadodehombre.html">Men's Shoes</a>
+    <a href="nino.html">Children's Shoes</a>
+
+</nav>
+
+
+<header>
+
+    <h1>Women's Clothing</h1>
+
+    <p>
+        Fashion, style and elegance for women
+    </p>
+
+</header>
+
+
+<section>
+
+    <h2>Women's Collection</h2>
+
+    <div class="products">
+
+
+        <div class="product">
+            <img src="bagy ancho.jpeg"
+                 onclick="openImage(this,'Baggy Pants','$25.00')">
+
+            <h3>Baggy Pants</h3>
+            <p class="price">$25.00</p>
+            <p class="sizes">Sizes: XS, S, M, L, XL</p>
+        </div>
+
+
+        <div class="product">
+            <img src="boddys.jpeg"
+                 onclick="openImage(this,'Body','$18.00')">
+
+            <h3>Body</h3>
+            <p class="price">$18.00</p>
+            <p class="sizes">Sizes: XS, S, M, L, XL</p>
+        </div>
+
+
+        <div class="product">
+            <img src="camisa corte v.jpeg"
+                 onclick="openImage(this,'V-Neck Shirt','$18.00')">
+
+            <h3>V-Neck Shirt</h3>
+            <p class="price">$18.00</p>
+            <p class="sizes">Sizes: XS, S, M, L, XL</p>
+        </div>
+
+
+        <div class="product">
+            <img src="camisa cuello de tortuga.jpeg"
+                 onclick="openImage(this,'Turtleneck Shirt','$20.00')">
+
+            <h3>Turtleneck Shirt</h3>
+            <p class="price">$20.00</p>
+            <p class="sizes">Sizes: XS, S, M, L, XL</p>
+        </div>
+
+
+        <div class="product">
+            <img src="Camisa de algodon para mujer.jpeg"
+                 onclick="openImage(this,'Women Cotton Shirt','$15.00')">
+
+            <h3>Women Cotton Shirt</h3>
+            <p class="price">$15.00</p>
+            <p class="sizes">Sizes: XS, S, M, L, XL</p>
+        </div>
+
+
+        <div class="product">
+            <img src="cardigans.jpeg"
+                 onclick="openImage(this,'Cardigan','$25.00')">
+
+            <h3>Cardigan</h3>
+            <p class="price">$25.00</p>
+            <p class="sizes">Sizes: S, M, L, XL</p>
+        </div>
+
+
+        <div class="product">
+            <img src="Chaqueta de mujer.jpeg"
+                 onclick="openImage(this,'Women Jacket','$35.00')">
+
+            <h3>Women Jacket</h3>
+            <p class="price">$35.00</p>
+            <p class="sizes">Sizes: S, M, L, XL, XXL</p>
+        </div>
+
+
+        <div class="product">
+            <img src="Dress.jpeg"
+                 onclick="openImage(this,'Dress','$30.00')">
+
+            <h3>Dress</h3>
+            <p class="price">$30.00</p>
+            <p class="sizes">Sizes: XS, S, M, L, XL</p>
+        </div>
+
+
+        <div class="product">
+            <img src="falda corte sirena.jpeg"
+                 onclick="openImage(this,'Mermaid Skirt','$25.00')">
+
+            <h3>Mermaid Skirt</h3>
+            <p class="price">$25.00</p>
+            <p class="sizes">Sizes: XS, S, M, L, XL</p>
+        </div>
+
+ <div class="product">
+            <img src="pantalon tipo vaquero.jpeg"
+                 onclick="openImage(this,'Cowboy Style Pants','$28.00')">
+
+            <h3>Cowboy Style Pants</h3>
+            <p class="price">$28.00</p>
+            <p class="sizes">Sizes: S, M, L, XL, XXL</p>
+        </div>
+
+        <div class="product">
+            <img src="falda globo.jpeg"
+                 onclick="openImage(this,'Balloon Skirt','$25.00')">
+
+            <h3>Balloon Skirt</h3>
+            <p class="price">$25.00</p>
+            <p class="sizes">Sizes: XS, S, M, L, XL</p>
+        </div>
+
+
+        <div class="product">
+            <img src="falda larga negra.jpeg"
+                 onclick="openImage(this,'Long Black Skirt','$25.00')">
+
+            <h3>Long Black Skirt</h3>
+            <p class="price">$25.00</p>
+            <p class="sizes">Sizes: XS, S, M, L, XL</p>
+        </div>
+
+
+        <div class="product">
+            <img src="falda pegadita.jpeg"
+                 onclick="openImage(this,'Fitted Skirt','$22.00')">
+
+            <h3>Fitted Skirt</h3>
+            <p class="price">$22.00</p>
+            <p class="sizes">Sizes: XS, S, M, L, XL</p>
+        </div>
+
+
+        <div class="product">
+            <img src="faldas con ojuelas.jpeg"
+                 onclick="openImage(this,'Sequin Skirt','$28.00')">
+
+            <h3>Sequin Skirt</h3>
+            <p class="price">$28.00</p>
+            <p class="sizes">Sizes: XS, S, M, L, XL</p>
+        </div>
+
+
+        <div class="product">
+            <img src="Jeans para mujer.jpeg"
+                 onclick="openImage(this,'Women Jeans','$25.00')">
+
+            <h3>Women Jeans</h3>
+            <p class="price">$25.00</p>
+            <p class="sizes">Sizes: XS, S, M, L, XL</p>
+        </div>
+
+
+        <div class="product">
+            <img src="pantalon campana de mujer.jpeg"
+                 onclick="openImage(this,'Bell Bottom Pants','$28.00')">
+
+            <h3>Bell Bottom Pants</h3>
+            <p class="price">$28.00</p>
+            <p class="sizes">Sizes: XS, S, M, L, XL</p>
+        </div>
+
+
+        <div class="product">
+            <img src="pantalon de moños.jpeg"
+                 onclick="openImage(this,'Bow Pants','$25.00')">
+
+            <h3>Bow Pants</h3>
+            <p class="price">$25.00</p>
+            <p class="sizes">Sizes: XS, S, M, L, XL</p>
+        </div>
+
+
+        <div class="product">
+            <img src="pantalon de mujer negro.jpeg"
+                 onclick="openImage(this,'Black Women Pants','$25.00')">
+
+            <h3>Black Women Pants</h3>
+            <p class="price">$25.00</p>
+            <p class="sizes">Sizes: XS, S, M, L, XL</p>
+        </div>
+        <div class="product">
+            <img src="vestido corseth.jpeg"
+                 onclick="openImage(this,'Corset Dress','$30.00')">
+
+            <h3>Corset Dress</h3>
+            <p class="price">$30.00</p>
+            <p class="sizes">Sizes: XS, S, M, L, XL</p>
+        </div>
+
+
+        <div class="product">
+            <img src="vestido pegadito al cuerpo.jpeg"
+                 onclick="openImage(this,'Fitted Dress','$30.00')">
+
+            <h3>Fitted Dress</h3>
+            <p class="price">$30.00</p>
+            <p class="sizes">Sizes: XS, S, M, L, XL</p>
+        </div>
+
+
+    </div>
+
+</section>
+
+
+<div id="zoom">
+
+    <span id="close" onclick="closeImage()">×</span>
+
+    <img id="bigImage">
+
+    <h2 id="bigName"></h2>
+
+    <p id="bigPrice"></p>
+
+</div>
+
+
+<footer>
+
+    <p>© 2026 Elegance Fashion</p>
+
+</footer>
+
+
+<script>
+
+function openImage(image, name, price) {
+
+    document.getElementById("zoom").style.display = "block";
+
+    document.getElementById("bigImage").src = image.src;
+
+    document.getElementById("bigName").innerHTML = name;
+
+    document.getElementById("bigPrice").innerHTML = price;
+
+}
+
+function closeImage() {
+
+    document.getElementById("zoom").style.display = "none";
+
+}
+
+</script>
+
+</body>
+</html>
