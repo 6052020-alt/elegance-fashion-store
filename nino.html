@@ -298,16 +298,6 @@
             <p class="price">$35.00</p>
             <p class="sizes">Sizes: 28, 29, 30, 31, 32, 33</p>
         </div>
-
-
-        <div class="product">
-            <img src="air jordan de niño.jpeg"
-                 onclick="openImage(this,'Jordan Sneakers for Boys','$35.00')">
-
-            <h3>Jordan Sneakers for Boys</h3>
-            <p class="price">$35.00</p>
-            <p class="sizes">Sizes: 28, 29, 30, 31, 32, 33</p>
-        </div>
         <div class="product">
             <img src="vans de niño.jpeg"
                  onclick="openImage(this,'Vans for Boys','$30.00')">
@@ -410,45 +400,23 @@
 <div id="zoom">
 
     <span id="close" onclick="closeImage()">×</span>
-
     <img id="bigImage">
-
     <h2 id="bigName"></h2>
-
     <p id="bigPrice"></p>
-
 </div>
-
-
 <footer>
-
     <p>© 2026 Elegance Fashion</p>
-
 </footer>
-
-
 <script>
-
 function openImage(image, name, price) {
-
     document.getElementById("zoom").style.display = "block";
-
     document.getElementById("bigImage").src = image.src;
-
     document.getElementById("bigName").innerHTML = name;
-
     document.getElementById("bigPrice").innerHTML = price;
-
 }
-
 function closeImage() {
-
     document.getElementById("zoom").style.display = "none";
-
 }
-
 </script>
-
 </body>
 </html>
-         
